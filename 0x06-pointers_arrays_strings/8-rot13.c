@@ -1,51 +1,29 @@
-/*
- * File: 8-rot13.c
- * Auth: Brennan D Baraban
- */
-
 #include "holberton.h"
 
 /**
- * rot13 - Encodes a string using rot13.
- * @str: The string to be encoded.
+ * rot13 - caesers cipher
+ * @str: pointer to an array of words
  *
- * Return: A pointer to the encoded string.
+ * Return: s
  */
+
 char *rot13(char *str)
 {
-	int indx1 = 0, indx2;
-	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
-			     'G', 'H', 'I', 'J', 'K', 'L',
-			     'M', 'N', 'O', 'P', 'Q', 'R',
-			     'S', 'T', 'U', 'V', 'W', 'X',
-			     'Y', 'Z', 'a', 'b', 'c', 'd',
-			     'e', 'f', 'g', 'h', 'i', 'j',
-			     'k', 'l', 'm', 'n', 'o', 'p',
-			     'q', 'r', 's', 't', 'u', 'v',
-			     'w', 'x', 'y', 'z'};
-	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
-			     'T', 'U', 'V', 'W', 'X', 'Y',
-			     'Z', 'A', 'B', 'C', 'D', 'E',
-			     'F', 'G', 'H', 'I', 'J', 'K',
-			     'L', 'M', 'n', 'o', 'p', 'q',
-			     'r', 's', 't', 'u', 'v', 'w',
-			     'x', 'y', 'z', 'a', 'b', 'c',
-			     'd', 'e', 'f', 'g', 'h', 'i',
-			     'j', 'k', 'l', 'm'};
+	int i, j;
+	char input[80] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char output[80] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	while (str[indx1])
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		for (indx2 = 0; indx2 < 52; indx2++)
+		for (j = 0; input[j] != '\0'; j++)
 		{
-			if (str[indx1] == alphabet[indx2])
+			if (str[i] == input[j])
 			{
-				str[indx1] = rot13key[indx2];
+				str[i] = output[j];
 				break;
 			}
 		}
 
-		indx1++;
 	}
-
 	return (str);
 }

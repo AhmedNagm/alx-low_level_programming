@@ -1,32 +1,26 @@
-/*
- * File: 7-leet.c
- * Auth: Brennan D Baraban
- */
-
-#include "holberton.h"
-
 /**
- * leet - Encodes a string to 1337.
- * @str: The string to be encoded.
+ * leet - replace letters with numbers
+ * @str: pointer to an array of words
  *
- * Return: A pointer to the encoded string.
+ * Return: s
  */
+
 char *leet(char *str)
 {
-	int indx1 = 0, indx2;
-	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
 
-	while (str[indx1])
+	char alpha[80] = "aAeEoOtTlL";
+	char numbers[80] = "43071";
+
+	for (i = 0; str[i] != '\0'; ++i)
 	{
-		for (indx2 = 0; indx2 <= 7; indx2++)
+		for (j = 0; alpha[j] != '\0'; j++)
 		{
-			if (str[indx1] == leet[indx2] ||
-			    str[indx1] - 32 == leet[indx2])
-				str[indx1] = indx2 + '0';
+			if (str[i] == alpha[j])
+			{
+				str[i] = numbers[j / 2];
+			}
 		}
-
-		indx1++;
 	}
-
 	return (str);
 }
