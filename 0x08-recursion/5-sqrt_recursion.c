@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 
+ * helper - function to loop eith new second variable
  *
  * @n: int arg
  * @result: int arg
