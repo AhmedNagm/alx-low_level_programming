@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
-  * print_alphabet_x10 - prints 10 times the alphabet, in lowercase, followed by \n
+  * print_alphabet_x10 - prints 10 times alphabet, in lowercase, followed by \n
   * return: always 0.
   */
 
