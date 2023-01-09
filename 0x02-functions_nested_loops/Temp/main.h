@@ -1,18 +1,17 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/* 
+/*
  * File: main.h
- * Auth: Ahmed Nagm
- * Desc: Function header declaration for all functions used in alx low level 
- * Desc2: programming - 0x02-functions_nested_loops.
+ * Auth: AhmedNagm
+ * Desc: Header file containing declarations for all functions
+ *       used in the 0x02-functions_nested_loops directory.
  */
- 
+
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
 int _islower(int c);
-<<<<<<< HEAD
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
@@ -22,8 +21,5 @@ void times_table(void);
 int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
-void re_visit(int n);
 
-=======
->>>>>>> 67334cc883a84d19d6047b5bea0b80665ef3313a
 #endif

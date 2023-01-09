@@ -30,7 +30,6 @@ functions written in the project.
 ## Tasks :page_with_curl:
 
 
-
 * **1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game**
   * [1-alphabet.c](./1-alphabet.c): C function that prints the alphabet in lowercase,
   followed by a new line.
