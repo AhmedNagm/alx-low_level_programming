@@ -6,10 +6,10 @@
 #include "main.h"
 
 /**
-  *
   * main - prints "_putchar"
   * return: always 0.
   */
+
 int main(void)
 {
 	_putchar('_');
