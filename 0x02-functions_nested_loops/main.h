@@ -11,8 +11,7 @@
 int _putchar(char c);
 void print_alphabet(void);
 void print_alphabet_x10(void);
-int _islower(int c);
-<<<<<<< HEAD
+int _islower(int c)
 int _isalpha(int c);
 int print_sign(int n);
 int _abs(int);
@@ -23,7 +22,4 @@ int add(int, int);
 void print_to_98(int n);
 void print_times_table(int n);
 void re_visit(int n);
-
-=======
->>>>>>> 67334cc883a84d19d6047b5bea0b80665ef3313a
 #endif

@@ -23,7 +23,6 @@ int _putchar(char c)
 
 		return (write(1, &c, 1));
 
-=======
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -34,5 +33,4 @@ int _putchar(char c)
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
->>>>>>> 67334cc883a84d19d6047b5bea0b80665ef3313a
 }
