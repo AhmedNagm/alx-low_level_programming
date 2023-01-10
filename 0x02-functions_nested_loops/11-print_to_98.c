@@ -7,7 +7,7 @@
 
 /**
  * print_to_98 - prints integers from and to 98.
- *@n - number to be start
+ *@n:  number to start with
  * Return: void.
  */
 
@@ -22,7 +22,7 @@ void print_to_98(int n)
 	printf("%d\n, ", n);
 	}
 
-	if (n < 98)
+	else
 	{
 		while (n < 98)
 		{
