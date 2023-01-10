@@ -27,7 +27,7 @@ functions written in the project.
 | `11-print_to_98.c`       | `void print_to_98(int n);`       |
 | `100-times_table.c`      | `void print_times_table(int n)`  |
 
-## Tasks :page_with_curl:
+### Tasks :page_with_curl:
 
 
 * **1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game**
