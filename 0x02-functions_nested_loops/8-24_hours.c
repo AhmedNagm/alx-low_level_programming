@@ -1,5 +1,5 @@
 /*
- * File: 7-print_last_digit.c
+ * File: 8-24_hours.c
  * Auth: AhmedNagm
  */
 
@@ -7,7 +7,7 @@
 
 /**
  * jack_bauer - prints the resembelnce of a timer in 24 series.
- * Return: the value of the last digit.
+ * Return: the timer from 00:00 to 24:59.
  */
 void jack_bauer(void)
 {
