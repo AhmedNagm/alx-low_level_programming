@@ -1,5 +1,5 @@
 /*
- * File: 0-times_table.c
+ * File: 9-times_table.c
  * Auth: AhmedNagm
  */
 
