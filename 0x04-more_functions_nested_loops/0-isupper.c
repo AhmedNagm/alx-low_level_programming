@@ -6,9 +6,9 @@
 #include "main.h"
 
 /*
- *_isupper - check if the input is upper case or not.
- *@c: the charcter in question.
- *Return: 1 if upper 0 otherwise.
+ * _isupper - check if the input is upper case or not.
+ * @c: the charcter in question.
+ * Return: 1 if upper 0 otherwise.
  */
 
 int _isupper(int c)
