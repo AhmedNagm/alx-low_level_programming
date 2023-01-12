@@ -1,19 +1,22 @@
+/*
+ * File: 3-print_numbers.c
+ * Auth: Ahmed Nagm
+ */
+
 #include "main.h"
 
 /**
- * print_numbers - prints 0123456789\n
- *
- * Return: void
+ * print_numbers - print numbers from 0 to 10.
+ * 
+ * Return: numbers from 0 to 9.
  */
-
 
 void print_numbers(void)
 {
-	char c;
-
-	for (c = '0'; c <= '9'; c++)
+	int n;
+	for (n = 0; n <= 9; n++)
 	{
-		_putchar(c);
-	}
+		_putchar(n + '0');
+		}
 	_putchar('\n');
 }
