@@ -7,7 +7,7 @@
 /**
  * print_most_numbers - prints the numbers from 1-9 but not 2 & 4
  *
- * Return: void
+ * Return: void.
  */
 
 void print_most_numbers(void)
