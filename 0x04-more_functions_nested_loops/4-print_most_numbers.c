@@ -6,7 +6,7 @@
 
 /**
  * print_most_numebers - print numbers from 0 - 9 without 2 and 4.
- Return: always zero.
+ *Return: void.
  *
  */
 
