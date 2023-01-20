@@ -1,15 +1,12 @@
-/*
- * File: 6-print_line.c
- * Auth: Ahmed Nagm
- */
-
 #include "main.h"
 
 /**
- * print_line - prints line n times.
- * @n: the n times.
+ * print_line - printing lines
+ * @n: number of times
+ *
  * Return: void
  */
+
 
 void print_line(int n)
 {
