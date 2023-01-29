@@ -2,15 +2,15 @@
  * File: 8-print_squre.c
  * Auth: Ahmed Nagm
  */
-
 #include "main.h"
 
 /**
  * print_square - prints the # sign to build a square.
  * @size: the size of the length and width of a squre.
- * 
+ *
  * Return: void
 */
+
 void print_square(int size)
 {
 	int i, j;
