@@ -8,7 +8,7 @@
 /**
  * print_square - prints the # sign to build a square.
  * @size: the size of the length and width of a squre.
- * Reture: void.
+ * Return: void.
 */
 
 /*
