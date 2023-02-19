@@ -1,13 +1,23 @@
+/*
+ * File: 3-puts.c
+ * Auth: Ahmed Nagm
+ * Project: ALX
+ */
 #include "main.h"
-
 /**
- * _puts - Prints a string .
- * @str: string.
+ * _puts - prints a string to stdout
+ * @str: string to be printed
+ *
+ * Return: void.
  */
 void _puts(char *str)
 {
-	while (*str)
-		_putchar(*str++);
 
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
 	_putchar('\n');
 }
