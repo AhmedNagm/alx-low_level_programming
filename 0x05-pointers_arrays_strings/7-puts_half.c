@@ -1,24 +1,36 @@
+/*
+ * File: 7-puts_half.c
+ * Auth: Ahmed Nagm
+ * Project: ALX
+ */
+
 #include "main.h"
 
 /**
- * puts_half - half of a string.
- * @str: string to be printed.
+ * puts_half - prints the other half of a string
+ * @str: the string to be printed
+ *
+ * Return: void
  */
+
 void puts_half(char *str)
 {
-	int i = 0, len = 0, j;
+	int len, n, index;
 
-	while (str[i++])
-		len++;
-
+	for (len = 0; str[len] != '\0'; len++)
+		;
 	if ((len % 2) == 0)
-		j = len / 2;
-
+	{
+		n = len / 2;
+	}
 	else
-		j = (len + 1) / 2;
+	{
+		n = (len + 1) / 2;
+	}
 
-	for (i = j; i < len; i++)
-		_putchar(str[i]);
-
+	for (index = n; index < len; index++)
+	{
+		_putchar(str[index]);
+	}
 	_putchar('\n');
 }
