@@ -1,23 +1,29 @@
 /*
  * File: 6-puts2.c
- * Auth: AhmedNagm
+ * Auth: Ahmed Nagm
+ * Project: ALX
  */
 
 #include "main.h"
 
 /**
- * puts2 - Prints one char out of two of a string.
- * @str: The string containing characters.
+ * puts2 - prints every other character of a string
+ * @str: the string to be printerd.
+ *
+ * Return: void
  */
+
 void puts2(char *str)
 {
-	int index = 0, len = 0;
+	int len;
 
-	while (str[index++])
-		len++;
+	int index;
 
+	for (len = 0; str[len] != '\0'; len++)
+		;
 	for (index = 0; index < len; index += 2)
+	{
 		_putchar(str[index]);
-
+	}
 	_putchar('\n');
 }
