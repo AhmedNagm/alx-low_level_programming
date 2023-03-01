@@ -1,18 +1,12 @@
-/*
- * File: 3-strcmp.c
- * Auth: Ahmed Nagm
- * Project: ALx
- */
-
 #include "main.h"
 
 /**
- * _strcmp - compares between strings
+ * _strcmp - compare strings
  *
- * @s1: string 1 String to add to.
- * @s2: String to add from.
+ * @s1: arg char
+ * @s2: arg char
  *
- * Return: 0.
+ * Return: string to stdout
  */
 
 int _strcmp(char *s1, char *s2)
@@ -27,5 +21,5 @@ int _strcmp(char *s1, char *s2)
 			return (s1[i] - s2[i]);
 		}
 	}
-	return (0);
+		return (0);
 }

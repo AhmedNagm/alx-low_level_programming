@@ -1,24 +1,17 @@
-/*
- * File: 6-cap-string.c
- * Auth: Ahmed Nagm
- * Project: ALx
- */
-
 #include "main.h"
-
 /**
- * cap_string - capitalize the first letter of words.
+ * cap_string - capitalize first letter of words in a string
  *
- * @str: the string in question.
+ * @str: pointer to an array of words
  *
- * Return: str.
+ * Return: Return capitalized words
  */
 
 char *cap_string(char *str)
 {
 	int i, j;
 	char sep[50] = {' ', '\n', '\t', ',', ';', '.', '!', '?', '"', '(', ')',
-					'{', '}'};
+			 '{', '}' };
 
 	for (i = 0; str[i] != '\0'; i++)
 	{

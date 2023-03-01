@@ -1,15 +1,17 @@
+/*
+ * File: 2-strncpy.c
+ * Auth: Ahmed Nagm
+ * Project: ALx
+ */
+
 #include "main.h"
 
 /**
- * _strncpy - concatinate the values of two integers.
- *
- * @dest: arg a
- *
- * @src: arg b
- *
- * @n: arg n
- *
- * Return: void.
+ * _strncpy - concats two strings with a specific range
+ * @dest: String to add to.
+ * @src: String to add from.
+ * @n: range of copy
+ * Return: dest.
  */
 
 char *_strncpy(char *dest, char *src, int n)
@@ -20,10 +22,11 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		dest[i] = src[i];
 	}
-	for (; i < n; i++)
 
-	dest[i] = '\0';
-
+	for (; i < n; i++) /* to add remaining n's as nulls - case n is greater i*/
+	{
+		dest[i] = '\0';
+	}
 
 	return (dest);
 }

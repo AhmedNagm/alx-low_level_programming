@@ -1,23 +1,19 @@
-/*
- * File: 5-string_toupper.c
- * Auth: Ahmed Nagm
- * Project: ALx
- */
-
 #include "main.h"
 
 /**
- * string_toupper - capitalize  a string.
+ * string_toupper - change a string to upper case
  *
- * @str: the string in question.
+ * @str: pointer to a string
  *
- * Return: str.
+ *  Return: s
  */
+
 
 char *string_toupper(char *str)
 {
+	int i;
 
-	int i = 0;
+	i = 0;
 
 	while (str[i] != '\0')
 	{

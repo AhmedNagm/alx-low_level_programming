@@ -1,21 +1,24 @@
+/*
+ * File: 4-rev_array.c
+ * Auth: Ahmed Nagm
+ * Project: ALx
+ */
+
 #include "main.h"
 
 /**
- * reverse_array - reverse array
+ * reverse_array - reverse a string.
  *
- * @a: arg char
- * @n: arg char
+ * @a: array to be reversed.
+ * @n: elements in the array.
  *
- * Return: int to stdout
+ * Return: void.
  */
 
 void reverse_array(int *a, int n)
+
 {
-
-	int i, temp;
-
-	i = 0;
-	temp = 0;
+	int i = 0, temp = 0;
 
 	n -= 1;
 
