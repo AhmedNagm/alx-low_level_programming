@@ -1,34 +1,32 @@
+/*
+ * File: 0-strcat.c
+ * Auth: Ahmed Nagm
+ * Project: ALx
+ */
+
 #include "main.h"
 
 /**
- * _strcat - concatinate the values of two integers.
+ * _strncat - concats two strings
+ * @dest: String to add to.
+ * @src: String to add from.
  *
- * @dest: arg a
- *
- * @src: arg b
- *
- * Return: void.
+ * Return: dest.
  */
 
 char *_strcat(char *dest, char *src)
 {
+
 	int i, j;
 
-	i = 0;
-
-	while (dest[i] != '\0')
-	{
-		i++;
-	}
-
-	j = 0;
-
-	while (src[j] != '\0')
+	for (i = 0; dest[i] != '\0'; i++)
+		;
+	for (j = 0; src[j] != '\0'; j++)
 	{
 		dest[i] = src[j];
 		i++;
-		j++;
 	}
 	dest[i] = '\0';
+
 	return (dest);
 }
